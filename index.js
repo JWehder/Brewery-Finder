@@ -25,5 +25,12 @@ function getBreweries() {
         // append values to page
 }
 
-
+function searchForBrewery(brewery) {
+    fetch(`https://api.openbrewerydb.org/breweries/search?query=${brewery}`)
+        .then(resp => resp.json())
+        .then(breweries => {
+            removeBreweriesOnPage()
+            breweries.forEach(brewery => createBreweryObj(brewery))
+        })
+}
 
