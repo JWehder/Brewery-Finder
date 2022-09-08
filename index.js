@@ -42,17 +42,17 @@ function createBrewCard(breweryObj) {
     phoneNumber.className = 'phone';
     address.className = 'address';
     website.className = 'website';
-    
-    
 
     //append to page
     breweryCollection.append(div)
     div.append(name, phoneNumber, address, website, saveButton)
 
-        
-
-
-
+    // parse the data from the card that was clicked so it can be saved as an obj to the db
+    saveButton.addEventListener('click', (e) => {
+        createParsedCardArray(e.path[1])
+        // add 1 to the number of saved breweries in the saved breweries button
+        getSavedBreweriesLength()
+    })
 }
 
 // parse data from the card in the DOM and turn it into an array that will be used to build an object
