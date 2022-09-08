@@ -106,5 +106,12 @@ function postBreweries(breweryObj) {
     })
 } 
 
-
+// get saved breweries from local db
+function getSavedBreweries() {
+    fetch('http://localhost:3000/saved_breweries')
+        .then(resp => resp.json())
+        .then(savedBreweries => {
+            savedBreweries.forEach(brewery => createBrewCard(brewery))
+        })
+}
 
