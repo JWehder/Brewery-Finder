@@ -92,3 +92,19 @@ function searchForBrewery(brewery) {
         })
 }
 
+// fetch requests from Local DB
+
+// post saved brewery to local DB when user clicks the save button
+function postBreweries(breweryObj) {
+    fetch('http://localhost:3000/saved_breweries', {
+        method: 'POST',
+        headers:
+        {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(breweryObj)
+    })
+} 
+
+
+
