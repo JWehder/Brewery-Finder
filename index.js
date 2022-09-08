@@ -41,10 +41,24 @@ function createBrewCard(breweryObj) {
     breweryCollection.append(div)
     div.append(name, phoneNumber, address, website, saveButton)
 
-
 }
 
+// Supplementary Functions
 
+function createBreweryObj(brewery) {
+    // instantiates a brewery object
+    const breweryObj = {
+        name: brewery.name,
+        phoneNumber: brewery.phone,
+        street: brewery.street,
+        city: brewery.city,
+        state: brewery.state,
+        zip: brewery.postal_code,
+        website: brewery.website_url
+    }
+    // uses the object as a parameter in the createBrewCard function
+    createBrewCard(breweryObj)
+}
 
 // Server Requests
 
