@@ -36,6 +36,12 @@ function createBrewCard(breweryObj) {
     
     // make the website a hyperlink
     website.href = breweryObj.website
+
+    //append to page
+    breweryCollection.append(div)
+    div.append(name, phoneNumber, address, website, saveButton)
+
+
 }
 
 
