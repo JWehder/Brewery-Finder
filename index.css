@@ -2,6 +2,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+h1 {
+    text-align: center;
+}
+
 #website-header {
     display: flex;
     justify-content: center;
@@ -11,23 +15,54 @@ body {
     padding: 1rem;
 }
 
+#website-header img {
+    height: 5rem;
+    width: auto;
+}
+
 #website-header h1 {
     font-family: 'Montserrat', sans-serif;
     opacity: 1;
 }
 
-#brewery-collection {
-    margin: 2rem;
+.input-text {
+    width: 8rem;
 }
 
-.card {
-    text-align: center;
+#saved-breweries {
+    margin: 0.5rem;
+    display: inline-block;
+}
+
+#brewery-collection {
+    margin: 2rem;
+    justify-content: center;
+}
+
+div.card {
     text-align: center;
     border: grey solid 1px;
     padding: 1rem;
-    width: 15rem;
-    height: 25rem;
+    width: 20rem;
+    height: 20rem;
     display: inline-grid;
     margin: 1rem 2rem;
-    box-shadow: 3px 4px #e04b52
+    box-shadow: 3px 4px #6b5b95;
+}
+
+div.card h3 {
+    color: #6b5b95;
+}
+
+div.card button {
+    background-color: #a2b9bc;
+}
+
+div.card button:hover {
+    background-color: #6b5b95;
+    opacity: 0.8;
+}
+
+#footer {
+    font-size: 10px;
 }
