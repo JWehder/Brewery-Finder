@@ -37,9 +37,21 @@ function createBrewCard(breweryObj) {
     // make the website a hyperlink
     website.href = breweryObj.website
 
+    // give each tag a unique class name so they can be accessed by the parseCard function
+    name.className = 'name';
+    phoneNumber.className = 'phone';
+    address.className = 'address';
+    website.className = 'website';
+    
+    
+
     //append to page
     breweryCollection.append(div)
     div.append(name, phoneNumber, address, website, saveButton)
+
+        
+
+
 
 }
 
