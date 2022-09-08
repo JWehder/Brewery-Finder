@@ -62,3 +62,7 @@ div.card button:hover {
     background-color: #6b5b95;
     opacity: 0.8;
 }
+
+#footer {
+    font-size: 10px;
+}
