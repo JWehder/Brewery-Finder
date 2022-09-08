@@ -34,3 +34,23 @@ h1 {
     display: inline-block;
 }
 
+#brewery-collection {
+    margin: 2rem;
+    justify-content: center;
+}
+
+div.card {
+    text-align: center;
+    border: grey solid 1px;
+    padding: 1rem;
+    width: 20rem;
+    height: 20rem;
+    display: inline-grid;
+    margin: 1rem 2rem;
+    box-shadow: 3px 4px #6b5b95;
+}
+
+div.card h3 {
+    color: #6b5b95;
+}
+
