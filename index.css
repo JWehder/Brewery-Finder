@@ -24,3 +24,12 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     opacity: 1;
 }
+
+.input-text {
+    width: 8rem;
+}
+
+#saved-breweries {
+    margin: 0.5rem;
+    display: inline-block;
+}
