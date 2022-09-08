@@ -43,6 +43,25 @@ function createBrewCard(breweryObj) {
 
 }
 
+// parse data from the card in the DOM and turn it into an array that will be used to build an object
+function createParsedCardArray(card) {
+    // grab each element so I can parse their text content
+    const name = card.querySelector('.name');
+    const phoneNumber = card.querySelector('.phone');
+    const address = card.querySelector('.address');
+    const website = card.querySelector('.website');
+
+    // parsed values for those who have redundant data
+    const parsedPhoneNumber = (phoneNumber.textContent).slice(14)
+    const addressArray = parseAddress(address.textContent)
+
+    // input all parsed values into array
+    const arrayOfCardElements = [name.textContent, parsedPhoneNumber, addressArray[0], addressArray[1], addressArray[2][1], addressArray[2][2],website.textContent]
+
+    // call object function to create objects to be posted
+    createObjWithParsedCard(arrayOfCardElements)
+}
+
 // remove all the breweries on the page
 function removeBreweriesOnPage() {
     // remove all elements that were pre-loaded on the page before creating new cards
