@@ -13,3 +13,14 @@ All of the data for your saved breweries will be stored in the db.json file. You
 ```bash
 json-server --watch db.json
 ```
+
+## Usage
+
+You can either check out the randommized collection of breweries posted to the homepage or search for a brewery yourself using the search bar in the top left corner. 
+![Alt Text](https://media.giphy.com/media/e2VHkP5G6aWUfLkNxc/giphy.gif)
+
+You can save the brewery's information by clicking the "Save Brewery"! button on the brewery's unique card.
+![Alt Text](https://media.giphy.com/media/tYgw7faFRTPaNnLSDm/giphy.gif)
+
+You can view all of your saved breweries with their information by clicking the "Saved Breweries" button below the search bar.
+![Alt Text](https://media.giphy.com/media/nTKemljbEu6OWkBQIW/giphy.gif)
