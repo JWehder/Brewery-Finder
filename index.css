@@ -14,3 +14,13 @@ h1 {
     height: 7rem;
     padding: 1rem;
 }
+
+#website-header img {
+    height: 5rem;
+    width: auto;
+}
+
+#website-header h1 {
+    font-family: 'Montserrat', sans-serif;
+    opacity: 1;
+}
