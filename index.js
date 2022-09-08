@@ -116,7 +116,17 @@ function parseAddress(address) {
 }
 
 function createParsedObj(array) {
-    
+    const parsedObj = {
+        name: array[0],
+        phoneNumber: array[1],
+        street: array[2],
+        city: array[3],
+        state: array[4],
+        zip: array[5],
+        website: array[6]
+    }
+
+    postBreweries(parsedObj)
 }
 
 // Server Requests
