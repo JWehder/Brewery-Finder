@@ -123,7 +123,7 @@ function parseAddress(address) {
     return parsedAddress
 }
 
-function createParsedObj(array) {
+function createObjWithParsedCard(array) {
     const parsedObj = {
         name: array[0],
         phoneNumber: array[1],
@@ -180,3 +180,13 @@ function getSavedBreweries() {
         })
 }
 
+
+function getSavedBreweriesLength() {
+    fetch('http://localhost:3000/saved_breweries')
+        .then(resp => resp.json())
+        .then(breweries => {
+            // grab savedBreweries button and enter in the amount of saved breweries
+            const savedBreweriesButton = document.querySelector('#saved-breweries');
+            savedBreweriesButton.textContent = `Saved Breweries (${breweries.length})`
+        })
+}

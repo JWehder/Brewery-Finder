@@ -1,5 +1,14 @@
 {
   "saved_breweries": [
-
+    {
+      "name": "10 Barrel Brewing Co",
+      "phoneNumber": "5415851007",
+      "street": "62970 18th St",
+      "city": "Bend",
+      "state": "Oregon",
+      "zip": "97701-9847",
+      "website": "http://www.10barrel.com",
+      "id": 1
+    }
   ]
 }
