@@ -43,6 +43,18 @@ function createBrewCard(breweryObj) {
 
 }
 
+// remove all the breweries on the page
+function removeBreweriesOnPage() {
+    // remove all elements that were pre-loaded on the page before creating new cards
+    const divCard = document.querySelector('#brewery-collection');
+    let child = divCard.lastElementChild;
+    // re-assign lastElementChild to the last element in divCard, then re-run the removal till there are none left amd child returns null
+    while (child){
+        divCard.removeChild(child)
+        child = divCard.lastElementChild;
+    }
+}
+
 // Supplementary Functions
 
 function createBreweryObj(brewery) {
