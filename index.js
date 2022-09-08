@@ -15,3 +15,15 @@ document.querySelector('#search-form').addEventListener('submit', (e) => {
 
 
 
+// Server Requests
+
+// get default values from open brewery DB
+function getBreweries() {
+    fetch(`https://api.openbrewerydb.org/breweries`)
+        .then(resp => resp.json())
+        .then(breweries => breweries.forEach(brewery => createBreweryObj(brewery)))
+        // append values to page
+}
+
+
+
