@@ -54,3 +54,11 @@ div.card h3 {
     color: #6b5b95;
 }
 
+div.card button {
+    background-color: #a2b9bc;
+}
+
+div.card button:hover {
+    background-color: #6b5b95;
+    opacity: 0.8;
+}
