@@ -115,6 +115,10 @@ function parseAddress(address) {
     return parsedAddress
 }
 
+function createParsedObj(array) {
+    
+}
+
 // Server Requests
 
 // get default values from open brewery DB
