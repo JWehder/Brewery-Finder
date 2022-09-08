@@ -1,5 +1,13 @@
 // Event Listeners
 
+// event listener for displaying saved breweries
+document.querySelector('#saved-breweries').addEventListener('click', (e) => {
+    removeBreweriesOnPage();
+    const h1 = document.querySelector('#breweries');
+    h1.textContent = 'My Saved Breweries';
+    getSavedBreweries()
+})
+
 // append breweries for page load
 document.addEventListener('DOMContentLoaded', () => {
     getBreweries()
