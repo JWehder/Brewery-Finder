@@ -103,6 +103,18 @@ function createBreweryObj(brewery) {
     createBrewCard(breweryObj)
 }
 
+function parseAddress(address) {
+    // take in an address and return am array of it's individual components
+    let parsedAddress = (address).slice(9)
+    // separate all elements except state and zip
+    parsedAddress = parsedAddress.split(',')
+    // create an array separating state and zip as well as the space before them
+    parsedAddress[2] = parsedAddress[2].split(' ')
+    // get rid of the space before state that was inserted with my post to DOM
+    parsedAddress[1] = parsedAddress[1].replace(' ', '')
+    return parsedAddress
+}
+
 // Server Requests
 
 // get default values from open brewery DB
