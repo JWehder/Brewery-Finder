@@ -26,6 +26,16 @@ function createBrewCard(breweryObj) {
     const address = document.createElement('p')
     const website = document.createElement('a')
     const saveButton = document.createElement('button')
+
+    // create text Content for each element
+    name.textContent = breweryObj.name;
+    phoneNumber.textContent = `Phone Number: ${breweryObj.phoneNumber}`;
+    address.textContent = `Address: ${breweryObj.street}, ${breweryObj.city}, ${breweryObj.state}` + ` ${breweryObj.zip}`
+    website.textContent = breweryObj.website;
+    saveButton.textContent = "Save Brewery!";
+    
+    // make the website a hyperlink
+    website.href = breweryObj.website
 }
 
 
