@@ -63,6 +63,10 @@ function createBrewCard(breweryObj) {
     })
 }
 
+function removeSaveBreweryButton() {
+
+}
+
 // parse data from the card in the DOM and turn it into an array that will be used to build an object
 function createParsedCardArray(card) {
     // grab each element so I can parse their text content
