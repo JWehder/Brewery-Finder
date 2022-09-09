@@ -63,9 +63,7 @@ function createBrewCard(breweryObj) {
     })
 }
 
-function removeSaveBreweryButton() {
 
-}
 
 // parse data from the card in the DOM and turn it into an array that will be used to build an object
 function createParsedCardArray(card) {
@@ -180,6 +178,9 @@ function getSavedBreweries() {
         .then(resp => resp.json())
         .then(savedBreweries => {
             savedBreweries.forEach(brewery => createBrewCard(brewery))
+            const breweryCollection = document.querySelector('#brewery-collection')
+            const breweryCollectionButtons = breweryCollection.querySelectorAll('button')
+            breweryCollectionButtons.forEach(button => button.remove())
         })
 }
 
