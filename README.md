@@ -33,3 +33,10 @@ You can save the brewery's information by clicking the "Save Brewery"! button on
 You can view all of your saved breweries with their information by clicking the "Saved Breweries" button below the search bar.
 
 ![Alt Text](https://media.giphy.com/media/nTKemljbEu6OWkBQIW/giphy.gif)
+
+## Roadmap 
+
+-I would like to add a delete button to each of the saved brewery cards.
+-I would like to add a home button to redirect you back to the home page
+
+## Con
