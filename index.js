@@ -133,7 +133,6 @@ function createObjWithParsedCard(array) {
         zip: array[5],
         website: array[6]
     }
-
     postBreweries(parsedObj)
 }
 
