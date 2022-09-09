@@ -39,4 +39,11 @@ You can view all of your saved breweries with their information by clicking the 
 -I would like to add a delete button to each of the saved brewery cards.
 -I would like to add a home button to redirect you back to the home page
 
-## Con
+## Contributing and Support
+
+For major changes or any questions, please contact me via email at jake.wehder@gmail.com.
+
+## Acknowledgement
+
+Database: https://www.openbrewerydb.org/documentation#search-breweries
+Cheers Icon in Header: https://www.flaticon.com/free-icons/beer
