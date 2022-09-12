@@ -38,7 +38,7 @@ You can view all of your saved breweries with their information by clicking the 
 
 - I would like to add a delete button to each of the saved brewery cards.
 - I would like to add a home button to redirect you back to the home page
-- Get rid of the parsed functions by using the unique ID on each brewery to save it's info.
+- Find an alternative for the parsed functions. 
 
 ## Contributing and Support
 

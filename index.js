@@ -180,6 +180,7 @@ function getSavedBreweries() {
             savedBreweries.forEach(brewery => createBrewCard(brewery))
             const breweryCollection = document.querySelector('#brewery-collection')
             const breweryCollectionButtons = breweryCollection.querySelectorAll('button')
+            // remove button so it cannot be liked a second time within the saved breweries collection
             breweryCollectionButtons.forEach(button => button.remove())
         })
 }
@@ -191,6 +192,8 @@ function getSavedBreweriesLength() {
         .then(breweries => {
             // grab savedBreweries button and enter in the amount of saved breweries
             const savedBreweriesButton = document.querySelector('#saved-breweries');
+            // update the quantity of saved breweries displayed on the saved breweries button
             savedBreweriesButton.textContent = `Saved Breweries (${breweries.length})`
         })
 }
+

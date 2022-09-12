@@ -1,14 +1,24 @@
 {
   "saved_breweries": [
     {
-      "name": "Austin Beerworks",
-      "phoneNumber": "5128212494",
-      "street": "3001 Industrial Ter",
-      "city": "Austin",
-      "state": "Texas",
-      "zip": "78758-7609",
-      "website": "http://www.austinbeerworks.com",
-      "id": 1
+      "name": "10 Barrel Brewing Co",
+      "phoneNumber": "5415851007",
+      "street": "62970 18th St",
+      "city": "Bend",
+      "state": "Oregon",
+      "zip": "97701-9847",
+      "website": "http://www.10barrel.com",
+      "id": 2
+    },
+    {
+      "name": "101 Brewery",
+      "phoneNumber": "3607656485",
+      "street": "294793 US Highway 101",
+      "city": "Quilcene",
+      "state": "Washington",
+      "zip": "98376-9000",
+      "website": "http://www.101brewery.com",
+      "id": 3
     },
     {
       "name": "Austin Beerworks",
@@ -18,7 +28,17 @@
       "state": "Texas",
       "zip": "78758-7609",
       "website": "http://www.austinbeerworks.com",
-      "id": 2
+      "id": 4
+    },
+    {
+      "name": "New York Beer Project",
+      "phoneNumber": "7167436927",
+      "street": "6933 S Transit Rd",
+      "city": "Lockport",
+      "state": "New",
+      "zip": "York",
+      "website": "http://www.nybeerproject.com",
+      "id": 5
     }
   ]
 }
