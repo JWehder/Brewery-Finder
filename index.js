@@ -12,7 +12,6 @@ document.querySelector('#saved-breweries').addEventListener('click', (e) => {
 document.addEventListener('DOMContentLoaded', () => {
     getBreweries()
     getSavedBreweriesLength()
-
 })
 
 // grab value from the search form and input it into brewery query
@@ -36,6 +35,7 @@ function createBrewCard(breweryObj) {
     const saveButton = document.createElement('button')
 
     // create text Content for each element
+    // remember interpolation process
     name.textContent = breweryObj.name;
     phoneNumber.textContent = `Phone Number: ${breweryObj.phoneNumber}`;
     address.textContent = `Address: ${breweryObj.street}, ${breweryObj.city}, ${breweryObj.state}` + ` ${breweryObj.zip}`
@@ -51,7 +51,7 @@ function createBrewCard(breweryObj) {
     address.className = 'address';
     website.className = 'website';
 
-    //append to page
+    // append to page
     breweryCollection.append(div)
     div.append(name, phoneNumber, address, website, saveButton)
 
@@ -97,6 +97,13 @@ function removeBreweriesOnPage() {
 }
 
 // Supplementary Functions
+
+function changeBreweryHeaderTextContent () {
+    const breweryHeader = document.querySelector('#breweries');
+    if (breweryHeader.textContent !== 'Breweries') {
+        breweryHeader.textContent = 'Breweries'
+    }
+}
 
 function createBreweryObj(brewery) {
     // instantiates a brewery object
@@ -144,7 +151,10 @@ function createObjWithParsedCard(array) {
 function getBreweries() {
     fetch(`https://api.openbrewerydb.org/breweries`)
         .then(resp => resp.json())
-        .then(breweries => breweries.forEach(brewery => createBreweryObj(brewery)))
+        .then(breweries => {
+            breweries.forEach(brewery => createBreweryObj(brewery))
+            changeBreweryHeaderTextContent()
+        })
         // append values to page
 }
 
@@ -154,7 +164,15 @@ function searchForBrewery(brewery) {
         .then(resp => resp.json())
         .then(breweries => {
             removeBreweriesOnPage()
+            changeBreweryHeaderTextContent()
             breweries.forEach(brewery => createBreweryObj(brewery))
+            if (breweries.length === 0) {
+                const h2 = document.createElement('h2');
+                const breweryCollection = document.querySelector('#brewery-collection')
+                h2.textContent = 'Sorry, we could not find the brewery you are looking for :('
+                h2.style.textAlign = 'center';
+                breweryCollection.appendChild(h2)
+            }
         })
 }
 
